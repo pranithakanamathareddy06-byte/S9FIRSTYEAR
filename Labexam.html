@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Summary</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+.container {
+    padding: 20px;
+}
+
+.book-info {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.book-info img {
+    width: 150px;
+    height: auto;
+}
+
+.summary {
+    margin-top: 20px;
+}
+
+/* Media Query for responsiveness */
+@media (max-width: 600px) {
+    .book-info {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Book Summary Page</h1>
+</header>
+
+<main class="container">
+
+    <section class="book-info">
+        <img src="Book.jpg" alt="Book Cover Image">
+        <div class="details">
+            <h2>Book Title: Wings of Fire</h2>
+            <p><strong>Author:</strong> A. P. J. Abdul Kalam</p>
+        </div>
+    </section>
+
+    <section class="summary">
+        <h3>Summary</h3>
+        <p>
+            Wings of Fire is an autobiography of Dr. A. P. J. Abdul Kalam.
+            It describes his childhood, education, and journey to becoming
+            a successful scientist and President of India.
+        </p>
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2025 Book Summary Page</p>
+</footer>
+
+</body>
+</html>
