@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+        font-family:Arial , sans-serif;
+        background-color:aqua;
+        text-align:center;
+     }
+     table {
+            margin: 20px auto;
+            border-collapse: collapse;
+            width: 50%;
+            background-color: white;
+        }
+     th, td {
+            border: 2px solid black;
+            padding: 10px;
+        }
+        th{
+            padding:10px;
+        }
+        input{
+            width: 60px;
+        }
+     button{
+     padding: 5px 10px;
+     background: blue;
+     color: white;
+     border: none;
+     cursor: pointer;
+}
+        
+</style>
+        
+</head>
+<body>
+    <h2>Grocery Billing</h2>
+     <table border="1" cellpadding="5"></table>
+     <table>
+    <tr>
+        <th>S.No</th>
+        <th>Item name</th>
+        <th>Price</th>
+        <th>Qty</th>
+    </tr>
+    <tr>
+        <td>1</td><td>Rice</td><td>60</td>
+        <td><input type="number" id="r" value="5"></td>
+    </tr>
+     <tr>
+        <td>2</td><td>Sugar</td><td>45</td>
+        <td><input type="number" id="s" value="2"></td>
+    </tr>
+     <tr>
+        <td>3</td><td>Milk</td><td>55</td>
+        <td><input type="number" id="m" value="6"></td>
+    </tr>
+    </table>
+    
+<button onclick="bill()">Generate Bill</button>
+
+<h3 id="result"></h3>
+
+
+    <script src="EXindex.js"></script>
+</body>
+</html>

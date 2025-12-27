@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Document</title>
+    <style>
+        body{
+            font-family:Arial, Helvetica, sans-serif;
+
+        }
+         table {
+            width: 80%;
+            margin: 0 auto;
+            border-collapse: collapse;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #3f51b5;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Manage Courses</h1>
+    <section>
+    <label for="Course name">Course name</label><br><br>
+    <input type="text" id="course" placeholder="enter the course name:"><br><br>
+    <label for="course Desc">Description</label><br><br>
+      <textarea id="courseDesc" placeholder="Describe the course for educators..."></textarea><br><br>
+    <button>Add course</button><br><br>
+    </section>
+    <section>
+        <table>
+        <tr>
+            <th>Course name</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>web development</td>
+            <td>Learn HTML, CSS, JavaScript</td>
+        </tr>
+        <tr>
+            <td>Python Programming</td>
+             <td>Basics to advanced Python for data science</td>
+        </tr>
+         <tr>
+                <td>Data Science</td>
+                <td>Learn data analysis and visualization</td>
+            </tr>
+            </table>
+    </section>
+    
+</body>
+</html>

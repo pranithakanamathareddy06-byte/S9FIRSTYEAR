@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN PAGE</title>
+    <script>
+    function validateForm() {
+      let name = document.getElementById("name").value;
+      let email = document.getElementById("email").value;
+      let password = document.getElementById("password").value;
+      const correctEmail = "user123@gmail.com";
+      const correctPassword = "Prani@06";
+      if (name === "") {
+        alert("Please enter your name");
+        return false;
+      }
+      if (email === "") {
+        alert("Please enter your email");
+        return false;
+      }
+      if (password.length < 8) {
+        alert("Password must be at least 8 characters");
+        return false;
+      }
+      alert(" your login successfully!");
+        window.location.href = "index.html";
+      return false;
+
+    if (email === correctEmail && password === correctPassword) {
+        alert("Login successful!");
+        window.location.href = "Index.html";  
+        return true;
+      } 
+      else {
+        alert("Incorrect Email or Password");
+        return false;
+      }
+    }
+
+    
+  </script>
+  <!-- <script>
+  function loginAdmin(event) {
+    event.preventDefault(); 
+    const password = document.getElementById("password").value;
+    const correctPassword = "admin123";
+
+    if (password === correctPassword) {
+      alert("Login successful!");
+      window.location.href = "Index.html";  
+    } else {
+      alert("Incorrect password. Try again!");
+    }
+  }
+</script> -->
+    <style>
+        body{
+            background-image: url(e\ learning.jpg);
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding-top: 70px;
+        }
+           .container {
+            background: rgba(0,0,0,0.6);
+            width: 350px;
+            margin: auto;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px black;
+        }
+        h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #f9ca24;
+        }
+
+        label {
+            font-size: 20px;
+            display: block;
+            margin-top: 10px;
+            font-family: cursive;
+        }
+        input {
+            width: 90%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        button {
+            margin-top: 20px;
+            width: 95%;
+            padding: 12px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            background-color: #f9ca24;
+            color: black;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #f6e58d;
+        }
+        .name{
+            font-family: cursive;
+            font-size: 25px;
+        }
+        .password{
+            font-family: cursive;
+            font-size: 25px;
+        }
+        .href{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+     <div class="container">
+<form onsubmit="return validateForm()">
+    <label>Name:</label><br>
+    <input type="text" id="name" placeholder="Enter your name"><br><br>
+
+    <label>Email:</label><br>
+    <input type="text" id="email" placeholder="Enter your email"><br><br>
+
+    <label>Password:</label><br>
+    <input type="password" id="password" placeholder="Enter your password"><br><br>
+
+<button type="submit">Login</button>
+
+  </form>
+  </div>
+</body>
+</html>
